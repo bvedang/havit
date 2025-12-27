@@ -7,5 +7,9 @@
 Setup
 ```bash
 npm install
+cp .env.example .env
+npx docker compose up -d
+npm run db:generate
+npm run db:migrate
 npm run dev
 ```
